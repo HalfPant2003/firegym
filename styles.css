@@ -1,5 +1,6 @@
 body {
     width: 100%;
+
 }
 
 nav {
@@ -11,8 +12,8 @@ nav {
 
 header {
     width: 100%;
-    background-image: url('images/fourthbg.jpg');
-    background-color: rgba(56, 57, 58,0.9);
+    background-image: url('images/fourthbg.webp');
+    background-color: rgba(56, 57, 58, 0.9);
     background-blend-mode: darken;
 }
 
@@ -58,7 +59,8 @@ nav li:hover {
     height: 620px;
     display: flex;
     width: 100%;
-    background-image: url('images/dumbells.jpg');
+
+    background-image: url('images/dumbells.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -257,19 +259,20 @@ nav li:hover {
 
 
 /*fourth*/
-.facilities {
 
-    background: rgba(46, 2, 2, 0.8); /* Black color with 50% opacity */
-    background-image: url('images/fourthbg.jpg'); /* Background image */
-    background-blend-mode: multiply; /* Blend mode to maintain background image visibility */
+.facilities {
+    background-image: url('images/fourthbg.jpg');
     background-size: cover;
+    background-position: center center;
     background-attachment: fixed;
-    background-position: center;
+    background-repeat: no-repeat;
 }
+/*containers*/
+
 
 
 .facility-container1 {
-    background: linear-gradient(to right, #242323, #4e4e4e,#696969, transparent), var(--bg-image);
+    background: linear-gradient(to right, #242323, #4e4e4e, #696969, transparent), url('images/sauna.webp');
     background-size: 100%;
     background-position: center;
     border-radius: 15px;
@@ -282,7 +285,7 @@ nav li:hover {
 }
 
 .facility-container2 {
-    background: linear-gradient(to right, #860f0f, #ac1313,#ca0f0f, transparent), var(--bg-image);
+    background: linear-gradient(to right, #860f0f, #ac1313, #ca0f0f, transparent), url('images/equipments.webp');
     background-size: 100%;
     background-position: center;
     border-radius: 15px;
@@ -296,19 +299,21 @@ nav li:hover {
 
 
 .facility-container1:hover,
-.facility-container2:hover {
+.facility-container2:hover{
+
     background-size: 120%;
-    filter: brightness(70%);
-    cursor: pointer;
+    cursor: pointer; 
 }
 
-.around-container{
-    display: flex; 
-    padding:30px; 
+.around-container {
+    display: flex;
+    padding: 30px;
     justify-content: space-around;
 }
 
-.facilities h1,.facilities h3, .facilities p{
+.facilities h1,
+.facilities h3,
+.facilities p {
     color: white;
     text-shadow: 0 0 20px rgba(0, 0, 0, 2);
 }
