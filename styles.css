@@ -1,0 +1,314 @@
+body {
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(87, 85, 85, 0.6);
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    background-image: url('images/fourthbg.jpg');
+    background-color: rgba(56, 57, 58,0.9);
+    background-blend-mode: darken;
+}
+
+header img {
+    height: auto;
+    width: 110px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 50px;
+}
+
+.right-header {
+    margin-right: -125px;
+}
+
+nav ul {
+    font-size: 18px;
+    color: rgb(255, 253, 253);
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav li {
+    margin-left: 50px;
+}
+
+
+nav li:hover {
+    font-size: 18px;
+    color: rgb(143, 143, 177);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/*first section*/
+
+
+.first-section {
+    padding: 30px;
+    height: 620px;
+    display: flex;
+    width: 100%;
+    background-image: url('images/dumbells.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.left-first-section {
+    width: 40%;
+    align-items: center;
+    margin: auto;
+    margin-left: 100px;
+}
+
+.left-first-section h2 {
+    padding: 10px;
+    color: azure;
+    font-weight: bold;
+}
+
+.left-first-section h2 span {
+    padding: 10px;
+    color: azure;
+    font-weight: bold;
+    font-size: 40px;
+    font-stretch: expanded;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.left-first-section h2 span:hover {
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.right-first-section {
+    width: 60%;
+}
+
+.video-section-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+
+}
+
+.video-section-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+}
+
+.video-container {
+    width: 35%;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.6);
+    border-radius: 75px;
+    transition: 0.3s;
+}
+
+.video-container:hover {
+    width: 37%;
+    box-shadow: 0px 0px 50px rgba(117, 30, 3, 0.6);
+    border-radius: 75px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 75px;
+}
+
+.transparent-button {
+    margin-top: -10px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+.transparent-button:hover {
+    background-color: rgba(204, 199, 199, 0.2);
+    border-radius: 20px;
+}
+
+/*second section*/
+.about-us {
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+
+.about-us img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.right-section h1 {
+    transform: rotate(-90deg);
+    transform-origin: center;
+    margin-top: 315px;
+    height: auto;
+    width: 100px;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.left-section {
+    width: 50%;
+    background-color: rgb(204, 195, 195);
+    padding: 30px;
+}
+
+.left-section h1 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.left-section h1 span {
+    color: black;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+}
+
+
+/*third*/
+
+.workout-offered {
+    display: flex;
+    height: 900px;
+}
+
+.workout-offered .left {
+    background-color: white;
+    height: 900px;
+    width: 50%;
+}
+
+.workout-offered .right {
+    background-color: rgb(145, 132, 132);
+    height: 900px;
+    width: 50%;
+}
+
+
+.circle-btn {
+    width: 100px;
+    /* Adjust size as needed */
+    height: 100px;
+    /* Adjust size as needed */
+    border-radius: 50%;
+    /* Makes the button circular */
+    background-color: #ee807c;
+    /* Background color of the button */
+    border: none;
+    /* Removes default button border */
+    cursor: pointer;
+    /* Cursor style on hover */
+    display: flex;
+    /* Aligns content horizontally and vertically */
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+
+}
+
+
+.circle-btn:hover {
+    background-color: #da990d;
+    /* Change background color on hover */
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.8);
+    /* Add text shadow on hover */
+    transition: 0.2s;
+}
+
+
+.circle-btn img {
+    height: 90px;
+    width: auto;
+}
+
+.workouts-f1 {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.workouts {
+    display: flex;
+    padding: 30px;
+    margin-bottom: 14px;
+}
+
+
+/*fourth*/
+.facilities {
+
+    background: rgba(46, 2, 2, 0.8); /* Black color with 50% opacity */
+    background-image: url('images/fourthbg.jpg'); /* Background image */
+    background-blend-mode: multiply; /* Blend mode to maintain background image visibility */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.facility-container1 {
+    background: linear-gradient(to right, #242323, #4e4e4e,#696969, transparent), var(--bg-image);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 15px;
+    filter: brightness(100%);
+    height: 130px;
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    transition: background-size 0.3s;
+}
+
+.facility-container2 {
+    background: linear-gradient(to right, #860f0f, #ac1313,#ca0f0f, transparent), var(--bg-image);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 15px;
+    filter: brightness(100%);
+    height: 130px;
+    width: 500px;
+    padding: 30px;
+    text-align: center;
+    transition: background-size 0.3s;
+}
+
+
+.facility-container1:hover,
+.facility-container2:hover {
+    background-size: 120%;
+    filter: brightness(70%);
+    cursor: pointer;
+}
+
+.around-container{
+    display: flex; 
+    padding:30px; 
+    justify-content: space-around;
+}
+
+.facilities h1,.facilities h3, .facilities p{
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 2);
+}
