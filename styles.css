@@ -3,63 +3,72 @@ body {
 
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgba(87, 85, 85, 0.6);
-    align-items: center;
-}
+
+/*header*/
 
 header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position:absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background-image: url('images/fourthbg.webp');
-    background-color: rgba(56, 57, 58, 0.9);
-    background-blend-mode: darken;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-    height: auto;
-    width: 110px;
-    margin-top: 12px;
-    margin-bottom: 12px;
-    margin-left: 50px;
-}
-
-.right-header {
-    margin-right: -125px;
-}
-
-nav ul {
-    font-size: 18px;
-    color: rgb(255, 253, 253);
-    list-style: none;
+nav {
     display: flex;
-    margin-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.left-header img {
+    width: 100px;
+    height: auto;
+}
+
+.right-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.right-header li {
+    margin-right: 20px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    transition: 0.2s;
+    padding: 5px;
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
-nav li {
-    margin-left: 50px;
+.right-header a:hover {
+    color: #ffd700; /* Change to desired hover color */
+}
+
+.right-header li:last-child a {
+    margin-right: 0;
 }
 
 
-nav li:hover {
-    font-size: 18px;
-    color: rgb(143, 143, 177);
-    transition: 0.2s;
-    cursor: pointer;
-}
 
 /*first section*/
 
 
 .first-section {
     padding: 30px;
-    height: 620px;
+    height: 650px;
     display: flex;
     width: 100%;
-
+    margin-top: 110px;
     background-image: url('images/dumbells.webp');
     background-size: cover;
     background-position: center;
@@ -78,6 +87,7 @@ nav li:hover {
     padding: 10px;
     color: azure;
     font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
 }
 
 .left-first-section h2 span {
@@ -86,7 +96,7 @@ nav li:hover {
     font-weight: bold;
     font-size: 40px;
     font-stretch: expanded;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
 }
 
 .left-first-section h2 span:hover {
@@ -144,7 +154,9 @@ nav li:hover {
     border-radius: 20px;
 }
 
+
 /*second section*/
+
 .about-us {
     width: 100%;
     height: 500px;
@@ -188,6 +200,7 @@ nav li:hover {
 }
 
 
+
 /*third*/
 
 .workout-offered {
@@ -210,23 +223,15 @@ nav li:hover {
 
 .circle-btn {
     width: 100px;
-    /* Adjust size as needed */
     height: 100px;
-    /* Adjust size as needed */
     border-radius: 50%;
-    /* Makes the button circular */
     background-color: #ee807c;
-    /* Background color of the button */
     border: none;
-    /* Removes default button border */
     cursor: pointer;
-    /* Cursor style on hover */
     display: flex;
-    /* Aligns content horizontally and vertically */
     justify-content: center;
     align-items: center;
     transition: 0.2s;
-
 }
 
 
@@ -263,48 +268,31 @@ nav li:hover {
 .facilities {
     background-image: url('images/fourthbg.jpg');
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
 }
 /*containers*/
 
 
-
-.facility-container1 {
-    background: linear-gradient(to right, #242323, #4e4e4e, #696969, transparent), url('images/sauna.webp');
+.facility-container{
+    background: linear-gradient(to right, #4d0909, #662a2a, transparent),url('images/gym.jpeg');
     background-size: 100%;
     background-position: center;
     border-radius: 15px;
-    filter: brightness(100%);
-    height: 130px;
+    height: 180px;
     width: 500px;
     padding: 30px;
     text-align: center;
     transition: background-size 0.3s;
-}
 
-.facility-container2 {
-    background: linear-gradient(to right, #860f0f, #ac1313, #ca0f0f, transparent), url('images/equipments.webp');
-    background-size: 100%;
-    background-position: center;
-    border-radius: 15px;
-    filter: brightness(100%);
-    height: 130px;
-    width: 500px;
-    padding: 30px;
-    text-align: center;
-    transition: background-size 0.3s;
 }
 
 
-.facility-container1:hover,
-.facility-container2:hover{
-
+.facility-container:hover{
     background-size: 120%;
     cursor: pointer; 
 }
-
 .around-container {
     display: flex;
     padding: 30px;
@@ -317,3 +305,187 @@ nav li:hover {
     color: white;
     text-shadow: 0 0 20px rgba(0, 0, 0, 2);
 }
+
+
+
+/*fifth section*/
+
+.start-training {
+    padding: 20px;
+    background-color: rgb(56, 57, 58);
+    
+}
+
+.contents {
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: -50px;
+}
+
+.contents h3 {
+    font-size: 230px;
+    color: rgb(77, 78, 80);
+}
+
+.contents .img1,
+.contents .img2 {
+    border-radius: 50%;
+    width: 330px;
+    height: 330px;
+    border: 13px solid rgb(77, 78, 80);
+}
+
+.contents .img1 {
+    margin-right: 30px; /* Adjusted margin */
+    margin-left: 30px; /* Adjusted margin */
+}
+
+.contents .img2 {
+    margin-right: 30px; /* Adjusted margin */
+    margin-left: 30px; /*  margin */
+}
+
+.number-container {
+    width: 300px;
+    height:auto;
+    flex-shrink: 0; /* Prevents the number container from shrinking */
+
+}
+
+.text-container {
+    width: 300px;
+    height:auto;
+}
+
+
+
+/*sixth section*/
+
+.contact-section {
+    display: flex;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.contact-section a:hover p {
+    color: black !important;
+}
+
+.contact-section h1{
+    color:rgb(8, 8, 8);
+    margin: 40px auto;
+    text-align: left;
+}
+.info-holder {
+    display: flex;
+    align-items: center;
+
+}
+
+.icon-holder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right: 20px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+/*header*/ 
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.query-section {
+    flex: 1;
+}
+
+.query-heading {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.query-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.query-textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+.query-submit {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.query-submit:hover {
+    background-color: #0056b3;
+}
+
+
