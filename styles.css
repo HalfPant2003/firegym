@@ -593,105 +593,80 @@ a {
 
 
 /*packages.html*/
-.packages-second-section {
-    background-color: #1c1c1c;
-    padding: 50px 20px;
+.packages {
+    background-color: rgb(189, 185, 185);
+    height: 600px;
 }
 
-.packages-second-section h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Grande', sans-serif;
-    padding: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.v-line {
+    width: 2px;
+    background-color: black;
 }
 
-.item-container {
+.h-line {
+    height: 2px;
+    background-color: black;
+}
+
+.pockets {
+    width: 200px;
+    height: 100px;
+    background-color: #0056b3;
+    transition: width 0.3s, height 0.3s;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.packages-container {
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 400px;
-    background-color: #2b2b2b;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
-
-.packages-container:hover {
-    transform: scale(1.05);
-    background-color: #3b3b3b;
-}
-
-.left1, .right2 {
-    flex: 1;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-.right1, .left2 {
-    flex: 1;
-    text-align: center;
-    padding: 20px;
-}
-
-.packages-second-section img {
-    border-radius: 50%;
-    height: 300px;
-    width: 300px;
     overflow: hidden;
-    box-shadow: 0 0 20px rgba(187, 0, 0, 1);
-    object-fit: cover;
+    position: relative;
 }
 
-.packages-second-section h2 {
-    color: #ff6600;
-    font-size: 24px;
-    margin-bottom: 10px;
+
+
+.pockets .content {
+    text-align: center;
+    color: rgb(5, 5, 5);
+    padding: 20px;
+    transition: 0.3s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.packages-second-section h2 span {
-    color: #ffffff;
-}
-
-.packages-second-section h3 {
-    color: #ffffff;
+.pockets h2 {
     font-size: 20px;
-    margin-bottom: 5px;
+    display: block;
+    color: white;
+    text-shadow: 0 0 80px #000000;
 }
 
-.packages-second-section p {
-    color: #cccccc;
-    font-size: 16px;
+.pockets p,
+.pockets h3 {
+    display: none;
+}
+.pockets:hover h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+.pockets:hover p,
+.pockets:hover h3 {
+    display: block;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 0 20px #fff;
+}
+.pockets:hover {
+    width: 600px;
+    height: 300px;
 }
 
-@media (max-width: 768px) {
-    .packages-container {
-        width: 100%;
-        height: auto;
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .left1, .right2, .right1, .left2 {
-        flex: none;
-        width: 100%;
-    }
-
-    .packages-second-section img {
-        height: 200px;
-        width: 200px;
-    }
+.pockets:hover .content {
+    display: block;
+    font-size: 40px;
 }
+
+
+
 
 
 /*competition.html*/
